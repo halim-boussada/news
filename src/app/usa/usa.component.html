@@ -1,0 +1,18 @@
+<div class="containerbig">
+  <div class="card" style="width: 18rem;" *ngFor="let e of usa">
+    <img
+      style="height: 200px;"
+      src="{{e?.urlToImage ? e?.urlToImage: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1200px-Flag_of_the_United_States.svg.png'}}"
+      class="card-img-top"
+    />
+    <div class="card-body">
+      <div style="height: 200px;">
+        <h5 class="card-title">{{e?.author || "no author"}}</h5>
+        <p class="card-text">
+          {{e?.description || "no description"}}
+        </p>
+      </div>
+      <a href="{{e?.url}}" class="btn btn-primary">See More</a>
+    </div>
+  </div>
+</div>

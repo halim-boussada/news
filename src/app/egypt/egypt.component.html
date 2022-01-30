@@ -1,0 +1,18 @@
+<div class="containerbig">
+  <div class="card" style="width: 18rem;" *ngFor="let e of egypt">
+    <img
+      style="height: 200px;"
+      src="{{e?.urlToImage ? e?.urlToImage: 'data:image/png;base64,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'}}"
+      class="card-img-top"
+    />
+    <div class="card-body">
+      <div style="height: 200px;">
+        <h5 class="card-title">{{e?.author || "no author"}}</h5>
+        <p class="card-text">
+          {{e?.description || "no description"}}
+        </p>
+      </div>
+      <a href="{{e?.url}}" class="btn btn-primary">See More</a>
+    </div>
+  </div>
+</div>
